@@ -4,7 +4,7 @@ Scrivi anche la posizione della lista in cui il nuovo utente si trova */
 //chiedere il cognome all'utente
 var newSurname = prompt("Prego inserirca il suo cognome")
 //creare array di cognomi
-var listSurname = ["Montanari", "Randazzo", "Fraternali", "Fiaschi"]
+var listSurname = ["Montanari", "Fraternali"]
 console.log(listSurname);
 
 //inserire cognome nell'array
@@ -21,9 +21,9 @@ for (var i = 0; i < listSurname.length; i++) {
 console.log(nomi);
 //stampa degli items dell'array
 prova = document.getElementById('asd').innerHTML;
-document.getElementById('asd').innerHTML = prova + " " + nomi;
+document.getElementById('asd').innerHTML = prova + " " + "<li>" + nomi + "</li>";
 }
 
 //scrivere posizione della lista del cognome inserito
 
-document.getElementById('lol').innerHTML = "Il cognome inserito nella lista occupa la posizione: " + (listSurname.indexOf(newSurname) + 1);
+document.getElementById('lol').innerHTML = "COMPLIMENTI " + newSurname + ", sei sul podio, ti sei classificato alla posizione " + (listSurname.indexOf(newSurname) + 1);

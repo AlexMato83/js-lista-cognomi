@@ -1,0 +1,35 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("img/podio2.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+#asd li {
+  list-style-type: none;
+}
+#asd {
+  display: flex;
+  justify-content: space-evenly;
+  height: 200px;
+  align-items: flex-end;
+}
+#asd li:nth-child(2){
+  margin-left: -283px;
+  margin-right: -337px;
+}
+
+#lol {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: -webkit-xxx-large;
+}
