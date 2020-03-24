@@ -8,10 +8,30 @@ var listSurname = ["Montanari", "Randazzo", "Fraternali", "Fiaschi"]
 console.log(listSurname);
 
 //inserire cognome nell'array
-var listSurname2 = listSurname.push(newSurname);
+listSurname.push(newSurname);
 console.log(listSurname);
 
 //stampare l'array in ordine alfabetico
-var ordinamento = listSurname2.sort();
+var ordinamento = listSurname.sort();
+console.log("output ");
 console.log(ordinamento);
+console.log("finito");
 //scrivere posizione della lista del cognome inserito
+var nomi, prova;
+for (var i = 0; i < listSurname.length; i++) {
+  nomi = listSurname[i];
+console.log(nomi);
+prova = document.getElementById('asd').innerHTML;
+document.getElementById('asd').innerHTML = prova + " " + nomi;
+}
+
+
+
+// var nomi;
+// var spaziovuoto;
+// for (var i = 0; i < ordinamento.length; i++) {
+//   nomi = nomi + " " + ordinamento[i];
+// }
+//
+//
+// document.getElementById('asd').innerHTML = nomi ;
