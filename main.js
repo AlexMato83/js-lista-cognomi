@@ -13,25 +13,17 @@ console.log(listSurname);
 
 //stampare l'array in ordine alfabetico
 var ordinamento = listSurname.sort();
-console.log("output ");
-console.log(ordinamento);
-console.log("finito");
-//scrivere posizione della lista del cognome inserito
+
+//for per generare la lista
 var nomi, prova;
 for (var i = 0; i < listSurname.length; i++) {
   nomi = listSurname[i];
 console.log(nomi);
+//stampa degli items dell'array
 prova = document.getElementById('asd').innerHTML;
 document.getElementById('asd').innerHTML = prova + " " + nomi;
 }
 
+//scrivere posizione della lista del cognome inserito
 
-
-// var nomi;
-// var spaziovuoto;
-// for (var i = 0; i < ordinamento.length; i++) {
-//   nomi = nomi + " " + ordinamento[i];
-// }
-//
-//
-// document.getElementById('asd').innerHTML = nomi ;
+document.getElementById('lol').innerHTML = "Il cognome inserito nella lista occupa la posizione: " + (listSurname.indexOf(newSurname) + 1);
